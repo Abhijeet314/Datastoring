@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import dbConnect from '../../../lib/mongodb';
 import Content from '../../../models/content';
 
-export async function GET(request: NextRequest) {
+export async function GET() {
   await dbConnect();
   try {
     const contents = await Content.find({}).sort({ createdAt: -1 });

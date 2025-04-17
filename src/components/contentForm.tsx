@@ -58,7 +58,7 @@ const ContentForm: React.FC = () => {
       setFormData({
         ...formData,
         [parent]: {
-          ...formData[parent as keyof FormData] as Record<string, any>,
+          ...formData[parent as keyof FormData] as Record<string, number>,
           [child]: value
         }
       });

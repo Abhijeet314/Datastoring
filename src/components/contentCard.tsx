@@ -7,7 +7,7 @@ interface ContentCardProps {
   onDelete: (id:  string) => void;
 }
 
-const ContentCard: React.FC<ContentCardProps> = ({ content, onDelete }) => {
+const ContentCard: React.FC<ContentCardProps> = ({ content }) => {
   // Format date to be more readable
   const formatDate = (dateString: string | Date): string => {
     const date = new Date(dateString);

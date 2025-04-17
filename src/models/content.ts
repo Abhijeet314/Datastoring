@@ -3,7 +3,7 @@ import mongoose, { Schema, Document } from 'mongoose';
 
 // Define interface for Content document
 export interface IContent extends Document {
-  _id(_id: any): void;
+  _id(_id: number): void;
   title: string;
   description: string;
   content: string;
